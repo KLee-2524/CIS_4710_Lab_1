@@ -26,8 +26,7 @@ variable "attendee_usernames" {
 
   default = [
     "rastley",
-    "ewatson",
-    "rreynolds"
+    "ewatson"
   ]
 }
 
@@ -37,8 +36,8 @@ locals {
 }
 
 
-module "vsftpd234-lab" {
-    source = "./modules/vsftpd234-lab"
+module "lab-1" {
+    source = "./modules/lab-1"
     for_each = local.attendee_index_map
 
     attendee_number = each.value
