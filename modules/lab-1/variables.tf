@@ -63,6 +63,9 @@ variable "kali_setup_script" {
     sudo DEBIAN_FRONTEND=noninteractive apt install zaproxy -y
     echo "apt install zaproxy initiated" >> /home/kali/FAST/setup_log.txt
 
+    sudo DEBIAN_FRONTEND=noninteractive apt install openvas -y
+    echo "apt install openvas initiated" >> /home/kali/FAST/setup_log.txt
+
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -y kali-desktop-xfce xorg xrdp xorgxrdp
     echo "xfce installation initiated" >> /home/kali/FAST/setup_log.txt
 
