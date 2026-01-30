@@ -60,7 +60,7 @@ variable "kali_setup_script" {
     sudo DEBIAN_FRONTEND=noninteractive apt-get full-upgrade -y
     echo "apt-get udpate & upgrade initiated" >> /home/kali/FAST/setup_log.txt
 
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y dirbuster gobuster zaproxy gvm
+    sudo DEBIAN_FRONTEND=noninteractive apt install -y dirbuster gobuster zaproxy nikto gvm 
     echo "apt install dirburster, gobuster, zaproxy, and gvm initiated" >> /home/kali/FAST/setup_log.txt
 
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -y kali-desktop-xfce xorg xrdp xorgxrdp
